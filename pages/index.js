@@ -1,9 +1,11 @@
 import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
 import styles from "../styles/Home.module.scss";
 
 const Home = () => {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Stefan Wittwer</title>
         <meta
@@ -12,13 +14,35 @@ const Home = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>I make things.</h1>
-        <video autoPlay loop playsInline muted className={styles.video}>
-          <source src="/video/home-logomark-visual.webm" />
-        </video>
-      </main>
+      <header className={styles.header}>
+        <Link href="/">
+          <a>
+            <Image
+              className={styles.logo}
+              src="/assets/sw-logomark.svg"
+              height={38}
+              width={68}
+              alt="Stefan Wittwer"
+            />
+          </a>
+        </Link>
+      </header>
+      <div className={styles.container}>
+        <main className={styles.main}>
+          <h1 className={styles.title}>I make things.</h1>
+          <video
+            autoPlay
+            loop
+            playsInline
+            muted
+            className={styles.video}
+            width={850}
+            height={550}
+          >
+            <source src="/video/home-logomark-visual.webm" />
+          </video>
+        </main>
+      </div>
     </div>
   );
 };

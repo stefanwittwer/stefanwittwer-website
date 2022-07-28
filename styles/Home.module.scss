@@ -1,3 +1,13 @@
+.header {
+  padding: 4.8rem 5.8rem;
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+}
+
 .container {
   padding: 0 2rem;
   max-width: 110rem;
@@ -32,4 +42,10 @@
 
   margin-top: 4rem;
   right: -12rem;
+
+  // Fix for weird video border glitch in Safari
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  -webkit-backface-visibility: hidden;
+  mask-image: radial-gradient(white, black);
+  backface-visibility: hidden;
 }
