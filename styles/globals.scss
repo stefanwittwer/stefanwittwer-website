@@ -23,6 +23,13 @@ body {
 
   background-color: $background-color;
   background-color: color(display-p3 0.955 0.955 0.956);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: #bcc5d0;
 }
 
 a {
@@ -34,4 +41,8 @@ p {
   font-size: 2rem;
   line-height: 3.4rem;
   letter-spacing: 1%;
+
+  a:hover {
+    text-decoration: underline;
+  }
 }

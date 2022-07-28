@@ -1,3 +1,5 @@
+@import "../styles/transitions.scss";
+
 .container {
   padding: 0 5.6rem;
   max-width: 120rem;
@@ -22,7 +24,7 @@
   position: relative;
   z-index: 1;
 
-  animation: fade-in 0.5s ease-in-out;
+  @include fade-in(0.25s);
 }
 
 .video {
@@ -44,15 +46,5 @@
   // Prevent picture-in-picture button overlay in Microsoft Edge
   pointer-events: none;
 
-  animation: fade-in 0.5s ease-in-out;
-}
-
-@keyframes fade-in {
-  0%,
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  @include fade-in(0.25s);
 }

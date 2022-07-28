@@ -1,11 +1,16 @@
-@import "../../styles/colours.scss";
 @import "../../styles/transitions.scss";
+@import "../../styles/colours.scss";
 
-.aboutText {
+.container {
   max-width: 61rem;
   padding: 0 2rem;
 
-  margin: 16rem auto;
+  margin: 0 auto;
+}
+
+.aboutText {
+  margin-top: 16rem;
+  margin-bottom: 9.2rem;
 
   h1 {
     @include slide-in(0.2s);
@@ -32,4 +37,13 @@
       text-decoration: underline;
     }
   }
+}
+
+.faq {
+  @include fade-in(1s);
+  margin-bottom: 8rem;
+}
+
+.faqBlock {
+  margin: 5.4rem 0;
 }

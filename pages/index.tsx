@@ -6,7 +6,9 @@ const Home = () => {
   return (
     <div>
       <Head>
-        <title>Stefan Wittwer</title>
+        <title>
+          Stefan Wittwer - Designer, developer and startup co-founder
+        </title>
         <meta
           name="description"
           content="Hi there! I'm Stefan, a designer, developer and startup co-founder from Switzerland."
