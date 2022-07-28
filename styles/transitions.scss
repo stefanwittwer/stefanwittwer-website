@@ -1,0 +1,24 @@
+@mixin slide-in($waitTime) {
+  animation: wait #{$waitTime},
+    slide-in 1s #{$waitTime} cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@keyframes wait {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(2rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+}
