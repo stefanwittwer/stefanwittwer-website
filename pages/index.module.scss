@@ -5,14 +5,14 @@
 }
 
 .main {
+  position: relative;
   min-height: 100vh;
   padding: 4rem 0;
-  flex: 1;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  position: relative;
 }
 
 .title {
@@ -34,8 +34,10 @@
   right: -12rem;
 
   // Fix for weird video border glitch in Safari
-  -webkit-mask-image: -webkit-radial-gradient(white, black);
-  -webkit-backface-visibility: hidden;
+  // https://stackoverflow.com/a/53779216
   mask-image: radial-gradient(white, black);
   backface-visibility: hidden;
+
+  // Prevent picture-in-picture button overlay in Microsoft Edge
+  pointer-events: none;
 }
