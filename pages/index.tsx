@@ -11,7 +11,7 @@ const Home = () => {
           name="description"
           content="Hi there! I'm Stefan, a designer, developer and startup co-founder from Switzerland."
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <Header />
       <div className={styles.container}>
