@@ -7,7 +7,7 @@ This is my personal website on stefanwittwer.com, written as a Next.js static si
 
 ## License
 
-This repository does not come with a license, which by default menas "All rights reserved".
+This repository does not come with a license, which by default means "All rights reserved".
 
 Feel free to peek around the source code and learn from it, but please don't redistribute any of the images, video assets or written content.
 
