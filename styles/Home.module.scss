@@ -6,6 +6,19 @@
   left: 0;
 
   width: 100%;
+  z-index: 500;
+
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  nav {
+    display: flex;
+    align-items: center;
+
+    gap: 3rem;
+  }
 }
 
 .container {

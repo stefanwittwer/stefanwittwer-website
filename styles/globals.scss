@@ -5,15 +5,20 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Edu Favorit", -apple-system, BlinkMacSystemFont, Segoe UI,
-    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-    sans-serif;
-  background-color: $background-color;
-  background-color: color(display-p3 0.955 0.955 0.956);
 }
 
 html {
   font-size: 62.5%;
+}
+
+body {
+  font-family: "Edu Favorit", -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
+  font-size: 1.6rem;
+
+  background-color: $background-color;
+  background-color: color(display-p3 0.955 0.955 0.956);
 }
 
 a {

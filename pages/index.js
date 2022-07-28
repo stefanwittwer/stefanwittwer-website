@@ -26,6 +26,11 @@ const Home = () => {
             />
           </a>
         </Link>
+        <nav role="navigation">
+          <Link href="/projects">Projects</Link>
+          <Link href="/writing">Writing</Link>
+          <Link href="/hello">Get in touch</Link>
+        </nav>
       </header>
       <div className={styles.container}>
         <main className={styles.main}>
