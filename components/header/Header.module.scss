@@ -18,5 +18,10 @@
     align-items: center;
 
     gap: 3rem;
+
+    a {
+      padding: 0.8rem 0;
+      border-bottom: 0.15rem solid transparent;
+    }
   }
 }

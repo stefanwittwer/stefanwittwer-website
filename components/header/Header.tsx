@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./Header.module.scss";
+import NavLink from "./navigation/NavLink";
 
 const Header = () => (
   <header className={styles.header}>
@@ -16,9 +17,10 @@ const Header = () => (
       </a>
     </Link>
     <nav role="navigation">
-      <Link href="/projects">Projects</Link>
-      <Link href="/writing">Writing</Link>
-      <Link href="/hello">Get in touch</Link>
+      <NavLink href="/about">About</NavLink>
+      <NavLink href="/projects">Projects</NavLink>
+      <NavLink href="/writing">Writing</NavLink>
+      <NavLink href="/hello">Get in touch</NavLink>
     </nav>
   </header>
 );

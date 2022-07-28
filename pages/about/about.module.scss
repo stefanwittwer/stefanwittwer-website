@@ -1,0 +1,24 @@
+@import "../../styles/colours.scss";
+
+.aboutText {
+  max-width: 61rem;
+  padding: 0 2rem;
+
+  margin: 16rem auto;
+}
+
+.links {
+  display: flex;
+  gap: 2.4rem;
+  margin: 3.2rem 0;
+
+  font-size: 2rem;
+
+  a {
+    color: $foreground-accent;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
