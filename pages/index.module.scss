@@ -1,7 +1,8 @@
 .container {
-  padding: 0 2rem;
-  max-width: 110rem;
+  padding: 0 5.6rem;
+  max-width: 120rem;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .main {
@@ -20,6 +21,8 @@
   font-size: 7.4rem;
   position: relative;
   z-index: 1;
+
+  animation: fade-in 0.5s ease-in-out;
 }
 
 .video {
@@ -40,4 +43,16 @@
 
   // Prevent picture-in-picture button overlay in Microsoft Edge
   pointer-events: none;
+
+  animation: fade-in 0.5s ease-in-out;
+}
+
+@keyframes fade-in {
+  0%,
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
