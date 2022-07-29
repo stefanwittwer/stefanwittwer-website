@@ -1,4 +1,11 @@
 {
   "title": "Float",
-  "description": "Cloud PCs for your business, setup in a few clicks"
+  "description": "Cloud PCs for your business, setup in a few clicks",
+  "graphics": {
+    "hero": true,
+    "heroForeground": true
+  },
+  "appearance": {
+    "heroHasDarkColour": true
+  }
 }

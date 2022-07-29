@@ -1,7 +1,8 @@
 {
   "title": "Quick Capture",
   "graphics": {
-    "hero": true
+    "hero": true,
+    "heroForeground": true
   },
   "tint": "#2173b9",
   "description": "The notepad that is always just one keystroke away. Get your thoughts out of your head – the moment you have them.",

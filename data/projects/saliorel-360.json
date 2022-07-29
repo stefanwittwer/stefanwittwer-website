@@ -1,7 +1,8 @@
 {
   "title": "SALIOREL for institutions",
   "graphics": {
-    "hero": true
+    "hero": true,
+    "heroForeground": true
   },
   "appearance": {
     "heroHasDarkColour": true

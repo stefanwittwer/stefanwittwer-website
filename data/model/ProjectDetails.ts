@@ -6,6 +6,7 @@ interface ProjectDetails {
   title: string
   graphics?: {
     hero?: boolean
+    heroForeground?: boolean
   }
   appearance?: {
     heroHasDarkColour?: boolean

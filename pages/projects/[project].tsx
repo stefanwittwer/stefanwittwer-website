@@ -1,6 +1,7 @@
 import fs from "fs"
 import { GetStaticPaths, GetStaticProps } from "next"
 import Head from "next/head"
+import Image from "next/image"
 import path from "path"
 import Container from "../../components/layout/container/Container"
 import Page from "../../components/page/Page"
@@ -64,11 +65,21 @@ const ProjectPage = (props: ProjectPageStaticProps) => {
       {props.details.graphics?.hero && (
         <div
           className={styles.hero}
-          style={{ backgroundImage: `url('/assets/hero/hero-${props.project.slug}.jpg')` }}
-        />
+          style={{ backgroundImage: `url('/assets/hero/backdrop-${props.project.slug}.png')` }}
+        >
+          {props.details.graphics?.heroForeground && (
+            <Image
+              src={`/assets/hero/foreground-${props.project.slug}.png`}
+              width={420}
+              height={150}
+              alt={props.project.title}
+            />
+          )}
+        </div>
       )}
       <Container className={styles.container}>
         <h1>{props.project.title}</h1>
+        {props.project.defunct && <span className={styles.defunct}>{props.project.defunct}</span>}
         <p>{props.details.description}</p>
       </Container>
     </Page>

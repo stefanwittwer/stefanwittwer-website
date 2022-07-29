@@ -15,6 +15,10 @@
 
   position: relative;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   @include slide-in(0.1s);
 
   &::after {
@@ -34,4 +38,14 @@
 
 .container {
   @include slide-in(0.35s);
+}
+
+.defunct {
+  display: block;
+
+  margin-top: -1rem;
+  margin-bottom: 3.2rem;
+
+  font-size: 1.8rem;
+  opacity: 0.6;
 }

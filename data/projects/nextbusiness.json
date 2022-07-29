@@ -1,7 +1,8 @@
 {
   "title": "NextBusiness",
   "graphics": {
-    "hero": true
+    "hero": true,
+    "heroForeground": true
   },
   "tint": "#04b4c3",
   "description": "The mission of NextBusiness is to help anyone realise their business ideas.",
