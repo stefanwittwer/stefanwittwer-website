@@ -37,10 +37,11 @@ export const getStaticProps: GetStaticProps<ProjectPageStaticProps> = async (con
 }
 
 const ProjectPage = (props: ProjectPageStaticProps) => {
+  const pageTitle = `${props.project.title} - Stefan Wittwer`
   return (
     <Page>
       <Head>
-        <title>{props.project.title} - Stefan Wittwer</title>
+        <title>{pageTitle}</title>
         <meta name="description" content={props.project.description} />
       </Head>
       <Container>
