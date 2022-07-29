@@ -1,4 +1,6 @@
-import Project from "../../../static/model/Project"
+import Image from "next/image"
+import Link from "next/link"
+import Project from "../../../data/model/Project"
 import DesignBox from "../../presentation/design-box/DesignBox"
 import styles from "./ProjectsList.module.scss"
 
@@ -9,12 +11,21 @@ interface ProjectsListProps {
 const ProjectsList = (props: ProjectsListProps) => (
   <div className={styles.projects}>
     {props.projects.map((project) => (
-      <div className={styles.project} key={project.slug}>
-        <DesignBox className={styles.box} />
-        <strong className={styles.title}>{project.title}</strong>
-        <span className={styles.description}>{project.description}</span>
-        {project.defunct && <span className={styles.defunct}>{project.defunct}</span>}
-      </div>
+      <Link href={`/projects/${project.slug}`} key={project.slug}>
+        <a className={styles.project}>
+          <DesignBox className={styles.box}>
+            <Image
+              src={`/assets/posters/${project.slug}.jpg`}
+              width={322}
+              height={244}
+              alt={project.title}
+            />
+          </DesignBox>
+          <strong className={styles.title}>{project.title}</strong>
+          <span className={styles.description}>{project.description}</span>
+          {project.defunct && <span className={styles.defunct}>{project.defunct}</span>}
+        </a>
+      </Link>
     ))}
   </div>
 )

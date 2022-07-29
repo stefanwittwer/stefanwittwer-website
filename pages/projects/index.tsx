@@ -1,20 +1,20 @@
 import { GetStaticProps, InferGetStaticPropsType } from "next"
 import ProjectsList from "../../components/content/projects-list/ProjectsList"
 import Page from "../../components/page/Page"
-import Project from "../../static/model/Project"
-import AllProjects from "../../static/projects/projects.json"
+import Project from "../../data/model/Project"
+import AllGroups from "../../data/projects/groups.json"
+import AllProjects from "../../data/projects/projects.json"
 import styles from "./projects.module.scss"
 
 interface ProjectsPageStaticProps {
-  projects: {
-    startups: Project[]
-    other: Project[]
-  }
+  projects: { [key: string]: Project[] }
+  groups: Record<string, string>
 }
 
 export const getStaticProps: GetStaticProps<ProjectsPageStaticProps> = async () => ({
   props: {
     projects: AllProjects,
+    groups: AllGroups,
   },
 })
 
@@ -26,14 +26,12 @@ const ProjectsPage = (props: InferGetStaticPropsType<typeof getStaticProps>) => 
       </div>
       <div className={styles.projects}>
         <div className={styles.projectsInner}>
-          <section>
-            <h2>Startups I&apos;ve co-founded</h2>
-            <ProjectsList projects={props.projects.startups} />
-          </section>
-          <section>
-            <h2>Apps and other projects</h2>
-            <ProjectsList projects={props.projects.other} />
-          </section>
+          {Object.keys(props.groups).map((group) => (
+            <section key={group}>
+              <h2>{props.groups[group]}</h2>
+              <ProjectsList projects={props.projects[group]} />
+            </section>
+          ))}
         </div>
       </div>
     </main>

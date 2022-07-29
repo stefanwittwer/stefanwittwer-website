@@ -22,12 +22,14 @@
       "defunct": "2016 – 2022"
     }
   ],
-  "other": [
+  "apps": [
     {
       "slug": "quick-capture",
       "title": "Quick Capture",
       "description": "Quick idea and thought capturing tool for macOS"
-    },
+    }
+  ],
+  "education": [
     {
       "slug": "saliorel",
       "title": "SALIOREL",
