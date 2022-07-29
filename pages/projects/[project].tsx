@@ -1,4 +1,5 @@
 import { GetStaticPaths, GetStaticProps } from "next"
+import Head from "next/head"
 import Container from "../../components/layout/container/Container"
 import Page from "../../components/page/Page"
 import Project from "../../data/model/Project"
@@ -38,6 +39,10 @@ export const getStaticProps: GetStaticProps<ProjectPageStaticProps> = async (con
 const ProjectPage = (props: ProjectPageStaticProps) => {
   return (
     <Page>
+      <Head>
+        <title>{props.project.title} - Stefan Wittwer</title>
+        <meta name="description" content={props.project.description} />
+      </Head>
       <Container>
         <h1>{props.project.title}</h1>
         <p>{props.project.description}</p>

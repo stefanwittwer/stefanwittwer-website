@@ -1,4 +1,5 @@
 import { GetStaticProps, InferGetStaticPropsType } from "next"
+import Head from "next/head"
 import ProjectsList from "../../components/content/projects-list/ProjectsList"
 import Page from "../../components/page/Page"
 import Project from "../../data/model/Project"
@@ -20,6 +21,13 @@ export const getStaticProps: GetStaticProps<ProjectsPageStaticProps> = async () 
 
 const ProjectsPage = (props: InferGetStaticPropsType<typeof getStaticProps>) => (
   <Page className={styles.page}>
+    <Head>
+      <title>Projects - Stefan Wittwer</title>
+      <meta
+        name="description"
+        content="I have co-founded a few startups, notably NextBusiness and Custom (superseeded by Float). You can learn more about apps and education projects I've worked on."
+      />
+    </Head>
     <main>
       <div className={styles.title}>
         <h1>Projects</h1>
