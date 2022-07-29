@@ -8,6 +8,7 @@ interface PageProps {
   className?: string
   fill?: boolean
   lightHeader?: boolean
+  style?: React.CSSProperties
 }
 
 const Page = (props: PageProps) => (
@@ -15,6 +16,7 @@ const Page = (props: PageProps) => (
     className={classNames(styles.page, props.className, {
       [styles.fill]: props.fill,
     })}
+    style={props.style}
   >
     <Header lightAppearance={props.lightHeader} />
     {props.children}

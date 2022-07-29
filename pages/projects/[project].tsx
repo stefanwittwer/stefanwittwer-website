@@ -10,16 +10,10 @@ import Container from "../../components/layout/container/Container"
 import Section from "../../components/layout/section/Section"
 import ExternalLink from "../../components/links/ExternalLink"
 import Page from "../../components/page/Page"
+import allProjects from "../../data/AllProjects"
 import Project from "../../data/model/Project"
 import ProjectDetails from "../../data/model/ProjectDetails"
-import AllProjects from "../../data/projects.json"
 import styles from "./project-page.module.scss"
-
-const allProjects = (): Project[] =>
-  Object.values(AllProjects).reduce(
-    (accumulator, currentProjects) => [...accumulator, ...currentProjects],
-    [],
-  )
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const projects = allProjects()

@@ -1,7 +1,19 @@
 @import "../../styles/transitions.scss";
 
 .page {
+  position: relative;
+}
+
+.main {
+  position: sticky;
+  top: 14rem;
+
+  height: auto;
   overflow-x: hidden;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .title {
@@ -20,8 +32,15 @@
 
 .projects {
   padding: 0 14rem;
-  padding-bottom: 2rem;
+
   overflow-x: auto;
+  overflow-y: hidden;
+
+  height: calc(100vh - 29rem);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
   @include slide-in-horizontal(0.35s);
 
