@@ -13,6 +13,7 @@ const ProjectsList = (props: ProjectsListProps) => (
         <DesignBox className={styles.box} />
         <strong className={styles.title}>{project.title}</strong>
         <span className={styles.description}>{project.description}</span>
+        {project.defunct && <span className={styles.defunct}>{project.defunct}</span>}
       </div>
     ))}
   </div>
