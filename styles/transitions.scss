@@ -1,6 +1,5 @@
 @mixin slide-in($waitTime) {
-  animation: wait #{$waitTime},
-    slide-in 1s #{$waitTime} cubic-bezier(0.23, 1, 0.32, 1);
+  animation: wait #{$waitTime}, slide-in 1s #{$waitTime} cubic-bezier(0.23, 1, 0.32, 1);
 }
 @mixin fade-in($waitTime) {
   animation: wait #{$waitTime}, fade-in 0.4s #{$waitTime} ease-in-out;

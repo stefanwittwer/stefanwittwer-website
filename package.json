@@ -1,6 +1,7 @@
 {
   "name": "stefanwittwer-website",
   "private": true,
+  "license": "UNLICENSED",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

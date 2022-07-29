@@ -1,7 +1,7 @@
-import Image from "next/image";
-import Link from "next/link";
-import styles from "./Header.module.scss";
-import NavLink from "./navigation/NavLink";
+import Image from "next/image"
+import Link from "next/link"
+import styles from "./Header.module.scss"
+import NavLink from "./navigation/NavLink"
 
 const Header = () => (
   <header className={styles.header}>
@@ -23,6 +23,6 @@ const Header = () => (
       <NavLink href="/hello">Get in touch</NavLink>
     </nav>
   </header>
-);
+)
 
-export default Header;
+export default Header
