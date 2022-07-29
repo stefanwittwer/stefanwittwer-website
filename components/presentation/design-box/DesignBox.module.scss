@@ -1,0 +1,34 @@
+@import "../../../styles/colours.scss";
+
+.box {
+  position: relative;
+  background-color: #00acc3;
+  border: 0.15rem solid $foreground-color;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+}
+
+.handle {
+  position: absolute;
+  border: 0.2rem solid $foreground-color;
+  background-color: white;
+
+  width: 1rem;
+  height: 1rem;
+
+  &.top {
+    top: -0.5rem;
+  }
+  &.bottom {
+    bottom: -0.5rem;
+  }
+  &.left {
+    left: -0.5rem;
+  }
+  &.right {
+    right: -0.5rem;
+  }
+}

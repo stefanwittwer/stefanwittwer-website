@@ -1,0 +1,48 @@
+{
+  "startups": [
+    {
+      "slug": "nextbusiness",
+      "title": "NextBusiness",
+      "description": "We're making modern startup tools for founders"
+    },
+    {
+      "slug": "nextcreative",
+      "title": "NextCreative",
+      "description": "Regional web and graphic design agency in Switzerland"
+    },
+    {
+      "slug": "float",
+      "title": "Float",
+      "description": "Cloud PCs for your business, setup in a few clicks"
+    },
+    {
+      "slug": "custom",
+      "title": "Custom",
+      "description": "Building individualised PCs for the Swiss market",
+      "defunct": "2016 – 2022"
+    }
+  ],
+  "other": [
+    {
+      "slug": "quick-capture",
+      "title": "Quick Capture",
+      "description": "Quick idea and thought capturing tool for macOS"
+    },
+    {
+      "slug": "saliorel",
+      "title": "SALIOREL",
+      "description": "Useful timetable app for cantonal schools in Zurich, used over 1.6 million times"
+    },
+    {
+      "slug": "saliorel-360",
+      "title": "SALIOREL for Institutions",
+      "description": "Modern timetable display and news management solution for schools"
+    },
+    {
+      "slug": "saliorel-edu",
+      "title": "SALIOREL Education",
+      "description": "Prototype for a new kind of integrated learning platform for BYOD schools",
+      "defunct": "2019"
+    }
+  ]
+}

@@ -1,20 +1,19 @@
 import Head from "next/head"
-import Container from "../../components/container/Container"
-import FAQBlock from "../../components/faq-block/FAQBlock"
-import Header from "../../components/header/Header"
+import Container from "../../components/layout/container/Container"
+import FAQBlock from "../../components/layout/faq-block/FAQBlock"
 import ExternalLink from "../../components/links/ExternalLink"
+import Page from "../../components/page/Page"
 import styles from "./about.module.scss"
 
 const AboutPage = () => (
-  <div>
+  <Page>
     <Head>
       <title>About me - Stefan Wittwer</title>
       <meta
         name="description"
-        content="Hi there! I'm Stefan, a designer, developer and startup co-founder from Switzerland."
+        content="I'm a product person, building things and startups that help people build more things. Read more about my work here."
       />
     </Head>
-    <Header />
     <main>
       <Container>
         <div className={styles.aboutText}>
@@ -60,7 +59,7 @@ const AboutPage = () => (
         </div>
       </Container>
     </main>
-  </div>
+  </Page>
 )
 
 export default AboutPage

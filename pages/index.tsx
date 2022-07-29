@@ -1,10 +1,10 @@
 import Head from "next/head"
-import Header from "../components/header/Header"
+import Page from "../components/page/Page"
 import styles from "./index.module.scss"
 
 const Home = () => {
   return (
-    <div>
+    <Page fill>
       <Head>
         <title>Stefan Wittwer - Designer, developer and startup co-founder</title>
         <meta
@@ -12,7 +12,6 @@ const Home = () => {
           content="Hi there! I'm Stefan, a designer, developer and startup co-founder from Switzerland."
         />
       </Head>
-      <Header />
       <div className={styles.container}>
         <main className={styles.main}>
           <h1 className={styles.title}>I make things.</h1>
@@ -21,7 +20,7 @@ const Home = () => {
           </video>
         </main>
       </div>
-    </div>
+    </Page>
   )
 }
 

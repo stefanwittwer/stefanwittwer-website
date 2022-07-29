@@ -1,0 +1,20 @@
+.title {
+  padding: 0 14rem;
+
+  h1 {
+    font-size: 4.8rem;
+    line-height: 6.432rem;
+    margin-top: 0;
+  }
+}
+
+.projects {
+  padding: 0 14rem;
+  padding-bottom: 2rem;
+  overflow-x: auto;
+}
+
+.projectsInner {
+  display: flex;
+  gap: 4rem;
+}
