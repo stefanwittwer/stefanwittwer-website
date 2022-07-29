@@ -7,15 +7,14 @@
   "appearance": {
     "heroHasDarkColour": true
   },
-  "tint": "#02142d",
+  "tint": "#274063",
   "description": "Custom is a startup assembling individualised PCs for consumers and businesses in Switzerland.",
   "foundingYear": "2016",
   "website": "https://www.custom-build.ch/",
   "industry": "Hardware & IT",
   "teamSize": "2 – 5",
   "markets": "Switzerland",
-  "role": "Marketing & Business Admin.",
-  "pressArticles": [
+  "publications": [
     {
       "source": "IT-Markt",
       "title": "Frischer Wind im Assemblierermarkt",
@@ -23,5 +22,6 @@
       "date": "01.11.2019"
     }
   ],
-  "story": "Having been involved in Custom in the early days before its official founding, I've had the privilege of joining my co-founders and learning a lot across various disciplines from finance to computer hardware while building our business. Today, Custom is a relatively stable small business, simplifying the configuration of individualized PCs for consumers for use in gaming and businesses requiring specific workstations in creative fields such as video editing, animation, CAD and 3D or powerful computational machines."
+  "story": "Having been involved in Custom in the early days before its official founding, I've had the privilege of joining my co-founders and learning a lot across various disciplines from finance to computer hardware while building our business. Today, Custom is a relatively stable small business, simplifying the configuration of individualized PCs for consumers for use in gaming and businesses requiring specific workstations in creative fields such as video editing, animation, CAD and 3D or powerful computational machines.",
+  "storyTitle": "Founding story"
 }

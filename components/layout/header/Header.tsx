@@ -14,7 +14,7 @@ const Header = (props: HeaderProps) => (
       <a>
         <Image
           className={styles.logo}
-          src={props.lightAppearance ? "/assets/sw-logomark-w.svg" : "/assets/sw-logomark.svg"}
+          src="/assets/sw-logomark.svg"
           height={38}
           width={68}
           alt="Stefan Wittwer"

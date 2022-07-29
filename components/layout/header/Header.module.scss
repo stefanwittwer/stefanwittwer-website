@@ -34,8 +34,24 @@
   &.light {
     color: white;
 
+    .logo {
+      filter: invert(1) brightness(2) saturate(0);
+    }
+
     nav a:global(.current) {
       border-color: white;
     }
+  }
+}
+
+body:global(.scrolled-past-hero) .header.light {
+  color: $foreground-color;
+
+  .logo {
+    filter: none;
+  }
+
+  nav a:global(.current) {
+    border-color: $foreground-color;
   }
 }

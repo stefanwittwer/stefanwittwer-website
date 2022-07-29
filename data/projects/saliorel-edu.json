@@ -13,8 +13,7 @@
   "platforms": "Web",
   "website": "https://www.saliorel.cloud/unterricht.html",
   "category": "Education",
-  "availability": "Closed preview",
-  "pressArticles": [
+  "publications": [
     {
       "source": "Impuls Mittelschule",
       "title": "Maturitätsarbeit im Archiv",
@@ -29,6 +28,5 @@
       "subtitle": "Outstanding matura project"
     }
   ],
-  "story": "\"It's about didactics, rather than technology.\"\n\nSALIOREL Education is a new digital learning platform, specifically designed for use in a BYOD classroom setting. In the context of my matura project, I conceptualized, designed and developed a prototype for this platform.\n\nThanks in part to the great reception of the matura project and the pressing need for such a platform which emphasizes the actual content rather than the technology, this platform might be further developed in the future as a side-project of mine.",
-  "storyTitle": "About this project"
+  "story": "\"It's about didactics, rather than technology.\"\n\nSALIOREL Education is a new digital learning platform, specifically designed for use in a BYOD classroom setting. In the context of my matura project, I conceptualized, designed and developed a prototype for this platform.\n\nThanks in part to the great reception of the matura project and the pressing need for such a platform which emphasizes the actual content rather than the technology, this platform might be further developed in the future as a side-project of mine."
 }

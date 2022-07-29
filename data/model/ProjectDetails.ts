@@ -1,5 +1,5 @@
 import Award from "./Award"
-import PressArticle from "./PressArticle"
+import Publication from "./Publication"
 
 interface ProjectDetails {
   name: string
@@ -14,15 +14,20 @@ interface ProjectDetails {
   tint?: string
   description?: string
   foundingYear?: string
+  creationYear?: string
   teamSize?: string
   website?: string
   industry?: string
   markets?: string
   role?: string
-  pressArticles?: PressArticle[]
+  publications?: Publication[]
   awards?: Award[]
   storyTitle?: string
   story?: string
+  partOf?: string
+  availability?: string
+  category?: string
+  platforms?: string
 }
 
 export default ProjectDetails

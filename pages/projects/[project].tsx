@@ -1,9 +1,14 @@
 import fs from "fs"
 import { GetStaticPaths, GetStaticProps } from "next"
 import Head from "next/head"
-import Image from "next/image"
 import path from "path"
+import InfoElement from "../../components/content/info-section/InfoElement"
+import InfoSection from "../../components/content/info-section/InfoSection"
+import ProjectHero from "../../components/content/project-hero/ProjectHero"
+import Publication from "../../components/content/publication/Publication"
 import Container from "../../components/layout/container/Container"
+import Section from "../../components/layout/section/Section"
+import ExternalLink from "../../components/links/ExternalLink"
 import Page from "../../components/page/Page"
 import Project from "../../data/model/Project"
 import ProjectDetails from "../../data/model/ProjectDetails"
@@ -63,25 +68,51 @@ const ProjectPage = (props: ProjectPageStaticProps) => {
         <meta name="description" content={props.project.description} />
       </Head>
       {props.details.graphics?.hero && (
-        <div
-          className={styles.hero}
-          style={{ backgroundImage: `url('/assets/hero/backdrop-${props.project.slug}.png')` }}
-        >
-          {props.details.graphics?.heroForeground && (
-            <Image
-              src={`/assets/hero/foreground-${props.project.slug}.png`}
-              width={420}
-              height={150}
-              alt={props.project.title}
-            />
-          )}
-        </div>
+        <ProjectHero
+          project={props.project}
+          hasForeground={props.details.graphics?.heroForeground}
+        />
       )}
-      <Container className={styles.container}>
-        <h1>{props.project.title}</h1>
-        {props.project.defunct && <span className={styles.defunct}>{props.project.defunct}</span>}
-        <p>{props.details.description}</p>
-      </Container>
+      <main className={styles.container}>
+        <Container>
+          <h1>{props.project.title}</h1>
+          {props.project.defunct && <span className={styles.defunct}>{props.project.defunct}</span>}
+          <p>{props.details.description}</p>
+        </Container>
+        <InfoSection>
+          <InfoElement title="Founding year">{props.details.foundingYear}</InfoElement>
+          <InfoElement title="Industry">{props.details.industry}</InfoElement>
+          <InfoElement title="Markets">{props.details.markets}</InfoElement>
+          <InfoElement title="Team size">{props.details.teamSize}</InfoElement>
+          <InfoElement title="Current role">{props.details.role}</InfoElement>
+          <InfoElement title="Parent company">{props.details.partOf}</InfoElement>
+          <InfoElement title="Availability">{props.details.availability}</InfoElement>
+          <InfoElement title="Category">{props.details.category}</InfoElement>
+          <InfoElement title="Created">{props.details.creationYear}</InfoElement>
+          <InfoElement title="Platforms">{props.details.platforms}</InfoElement>
+        </InfoSection>
+        <Container>
+          {props.details.story && (
+            <Section title={props.details.storyTitle ?? "About this project"}>
+              <p>{props.details.story}</p>
+            </Section>
+          )}
+          {props.details.publications && (
+            <Section title="Publications">
+              {props.details.publications.map((publication) => (
+                <Publication publication={publication} key={publication.url} />
+              ))}
+            </Section>
+          )}
+          {props.details.website && (
+            <p>
+              <ExternalLink href={props.details.website} tint={props.details.tint}>
+                Visit website
+              </ExternalLink>
+            </p>
+          )}
+        </Container>
+      </main>
     </Page>
   )
 }

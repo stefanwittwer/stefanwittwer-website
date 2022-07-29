@@ -1,6 +1,6 @@
 import Head from "next/head"
 import Container from "../../components/layout/container/Container"
-import FAQBlock from "../../components/layout/faq-block/FAQBlock"
+import Section from "../../components/layout/section/Section"
 import ExternalLink from "../../components/links/ExternalLink"
 import Page from "../../components/page/Page"
 import styles from "./about.module.scss"
@@ -16,7 +16,7 @@ const AboutPage = () => (
     </Head>
     <main>
       <Container>
-        <div className={styles.aboutText}>
+        <section className={styles.aboutText}>
           <h1>I&apos;m a designer, developer, and startup co-founder from Switzerland.</h1>
           <p>
             I&apos;m a product person, building things and startups that help people build more
@@ -26,15 +26,15 @@ const AboutPage = () => (
             <ExternalLink href="https://twitter.com/Stefan_Wittwer">Twitter</ExternalLink>
             <ExternalLink href="https://github.com/StefanWittwer">GitHub</ExternalLink>
           </div>
-        </div>
+        </section>
         <div className={styles.faq}>
-          <FAQBlock title="What kind of work do you do?">
+          <Section title="What kind of work do you do?">
             <p>
               I&apos;m a generalist, working at the intersection of design and technology – having
               experience in both fields. Most of my time is devoted to product work for my startups.
             </p>
-          </FAQBlock>
-          <FAQBlock title="What tools do you use?">
+          </Section>
+          <Section title="What tools do you use?">
             <p>
               The most important tool I use is the excellent{" "}
               <ExternalLink href="https://www.culturedcode.com/">Things 3</ExternalLink>, which
@@ -49,13 +49,13 @@ const AboutPage = () => (
               I use Microsoft&apos;s{" "}
               <ExternalLink href="https://code.visualstudio.com/">Visual Studio Code</ExternalLink>.
             </p>
-          </FAQBlock>
-          <FAQBlock title="Are you available for hire?">
+          </Section>
+          <Section title="Are you available for hire?">
             <p>
               Not currently, no. For design projects, see{" "}
               <ExternalLink href="https://www.nextcreative.ch">NextCreative</ExternalLink>.
             </p>
-          </FAQBlock>
+          </Section>
         </div>
       </Container>
     </main>

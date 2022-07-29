@@ -4,13 +4,14 @@
     "hero": true,
     "heroForeground": true
   },
-  "tint": "#04b4c3",
+  "tint": "#0a678f",
   "description": "The mission of NextBusiness is to help anyone realise their business ideas.",
   "foundingYear": "2018",
   "teamSize": "5 – 10",
   "website": "https://www.nextbusiness.ch/",
   "industry": "Startup services",
   "markets": "Switzerland",
-  "role": "Chief Executive Officer",
-  "story": "NextBusiness was founded in 2018 with the mission to help anyone realise their business ideas through business services from marketing to startup consulting. Today, NextBusiness is a fast growing but more focused company, creating helpful resources to educate and inspire young startup founders like ourselves, tackling the issues small businesses in Switzerland face today, and providing breakthrough services to help companies stand out."
+  "role": "CEO",
+  "story": "NextBusiness was founded in 2018 with the mission to help anyone realise their business ideas through business services from marketing to startup consulting. Today, NextBusiness is a focused company, creating helpful resources to educate and inspire young startup founders like ourselves, tackling the issues small businesses in Switzerland face today, and providing breakthrough tools that help anyone start their own business.",
+  "storyTitle": "Founding story"
 }

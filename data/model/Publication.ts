@@ -1,8 +1,8 @@
-interface PressArticle {
+interface Publication {
   source: string
   title: string
   url: string
   date: string
 }
 
-export default PressArticle
+export default Publication

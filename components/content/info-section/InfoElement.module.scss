@@ -1,0 +1,21 @@
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 1.8rem 0;
+}
+
+.infoText {
+  font-size: 2rem;
+  line-height: 3.4rem;
+  font-weight: 500;
+  letter-spacing: 1%;
+  display: block;
+}
+
+.infoDescription {
+  font-size: 1.6rem;
+  line-height: 2.144rem;
+  font-weight: 400;
+  letter-spacing: 3%;
+}
