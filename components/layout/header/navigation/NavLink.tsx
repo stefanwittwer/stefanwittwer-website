@@ -1,6 +1,5 @@
 import Link from "next/link"
 import { useRouter } from "next/router"
-import styles from "./NavLink.module.scss"
 import React from "react"
 
 interface NavLinkProps {
@@ -17,7 +16,7 @@ const NavLink = (props: NavLinkProps) => {
   const router = useRouter()
   return (
     <Link href={props.href}>
-      <a className={router.pathname === props.href ? styles.current : undefined}>
+      <a className={doesPathMatch(props.href, router.pathname) ? "current" : undefined}>
         {props.children}
       </a>
     </Link>

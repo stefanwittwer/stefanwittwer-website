@@ -1,3 +1,5 @@
+@import "../../../styles/colours.scss";
+
 .header {
   padding: 4.8rem 5.8rem;
   position: fixed;
@@ -22,6 +24,18 @@
     a {
       padding: 0.8rem 0;
       border-bottom: 0.15rem solid transparent;
+
+      &:global(.current) {
+        border-color: $foreground-color;
+      }
+    }
+  }
+
+  &.light {
+    color: white;
+
+    nav a:global(.current) {
+      border-color: white;
     }
   }
 }

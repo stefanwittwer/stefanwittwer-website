@@ -1,0 +1,33 @@
+{
+  "title": "SALIOREL Education",
+  "graphics": {
+    "hero": true
+  },
+  "appearance": {
+    "heroHasDarkColour": true
+  },
+  "tint": "#f329a2",
+  "description": "Integrated learning platform for BYOD schools",
+  "creationYear": "2019",
+  "platforms": "Web",
+  "website": "https://www.saliorel.cloud/unterricht.html",
+  "category": "Education",
+  "availability": "Closed preview",
+  "pressArticles": [
+    {
+      "source": "Impuls Mittelschule",
+      "title": "Maturitätsarbeit im Archiv",
+      "url": "https://www.impulsmittelschule.ch/download/pictures/8c/a8gawdfmo925ats2j2bh1ddma54lqk/0_wittwer_stefan-1553889786.pdf",
+      "date": "2019"
+    }
+  ],
+  "awards": [
+    {
+      "source": "Kantonsschule Zürcher Oberland",
+      "title": "Award",
+      "subtitle": "Outstanding matura project"
+    }
+  ],
+  "story": "\"It's about didactics, rather than technology.\"\n\nSALIOREL Education is a new digital learning platform, specifically designed for use in a BYOD classroom setting. In the context of my matura project, I conceptualized, designed and developed a prototype for this platform.\n\nThanks in part to the great reception of the matura project and the pressing need for such a platform which emphasizes the actual content rather than the technology, this platform might be further developed in the future as a side-project of mine.",
+  "storyTitle": "About this project"
+}

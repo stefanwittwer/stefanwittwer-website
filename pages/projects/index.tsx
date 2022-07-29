@@ -3,8 +3,8 @@ import Head from "next/head"
 import ProjectsList from "../../components/content/projects-list/ProjectsList"
 import Page from "../../components/page/Page"
 import Project from "../../data/model/Project"
-import AllGroups from "../../data/projects/groups.json"
-import AllProjects from "../../data/projects/projects.json"
+import AllGroups from "../../data/groups.json"
+import AllProjects from "../../data/projects.json"
 import styles from "./projects.module.scss"
 
 interface ProjectsPageStaticProps {

@@ -1,0 +1,33 @@
+{
+  "title": "SALIOREL",
+  "graphics": {
+    "hero": true
+  },
+  "appearance": {
+    "heroHasDarkColour": true
+  },
+  "tint": "#f329a2",
+  "description": "Useful timetable and school planner app for cantonal schools in Zurich",
+  "creationYear": "2014",
+  "platforms": "Web and mobile web app",
+  "website": "https://www.saliorel.cloud/",
+  "category": "Education",
+  "availability": "Canton of Zurich",
+  "pressArticles": [
+    {
+      "source": "iPhone Blog",
+      "title": "saliokan – Stundenplan, Mensa und Noten für Kantonsschulen",
+      "url": "https://www.iphone-blog.ch/2016/08/20/saliokan-stundenplan-mensa-und-noten-fur-kantonsschulen/",
+      "date": "20.08.2016"
+    }
+  ],
+  "awards": [
+    {
+      "source": "Apple",
+      "title": "Featured",
+      "subtitle": "App Store Homepage"
+    }
+  ],
+  "story": "SALIOREL was created back in 2014 as a simple website to check the KZO timetable and has evolved into a sophisticated application, used over 1.6 million times in total.\n\nThe current version of saliorel.com allows KZO students and teachers to check their timetables, cafeteria menues and more – with a full grade calculator and school planner included. Previously, the iOS and Android app named \"saliokan\" was also available for over 18+ cantonal schools in and around Zurich.\n\nSoon, these platforms will converge in the new SALIOREL 6 – the best version yet – that is more modern and more useful than ever before.",
+  "storyTitle": "About this project"
+}

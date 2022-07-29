@@ -1,0 +1,27 @@
+{
+  "title": "Quick Capture",
+  "graphics": {
+    "hero": true
+  },
+  "tint": "#2173b9",
+  "description": "The notepad that is always just one keystroke away. Get your thoughts out of your head – the moment you have them.",
+  "creationYear": "2019",
+  "platforms": "macOS",
+  "website": "https://apps.apple.com/us/app/notion/id1439118243?l=de&ls=1&mt=12",
+  "category": "Productivity",
+  "availability": "Global",
+  "awards": [
+    {
+      "source": "Product Hunt",
+      "title": "#3 Product of the Day",
+      "subtitle": "February 03, 2019"
+    },
+    {
+      "source": "Product Hunt",
+      "title": "340+",
+      "subtitle": "Votes"
+    }
+  ],
+  "story": "Quick Capture, formerly known as Notation, is a notepad utility for macOS that is always just one keystroke away. Using option + space, a digital notepad for getting thoughts quickly out of the head and into writing can be toggled. This shortcut and the appearance of Quick Capture are customizable.\n\nThe app is currently unavailable in the App Store while the next update is underway, which will bring more customization options and shortcuts for faster keyboard-only navigation.",
+  "storyTitle": "About this app"
+}

@@ -1,15 +1,20 @@
+import classNames from "classnames"
 import Image from "next/image"
 import Link from "next/link"
 import styles from "./Header.module.scss"
 import NavLink from "./navigation/NavLink"
 
-const Header = () => (
-  <header className={styles.header}>
+interface HeaderProps {
+  lightAppearance?: boolean
+}
+
+const Header = (props: HeaderProps) => (
+  <header className={classNames(styles.header, { [styles.light]: props.lightAppearance })}>
     <Link href="/">
       <a>
         <Image
           className={styles.logo}
-          src="/assets/sw-logomark.svg"
+          src={props.lightAppearance ? "/assets/sw-logomark-w.svg" : "/assets/sw-logomark.svg"}
           height={38}
           width={68}
           alt="Stefan Wittwer"
