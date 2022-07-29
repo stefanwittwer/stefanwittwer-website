@@ -1,4 +1,6 @@
 import Head from "next/head"
+import Container from "../../components/container/Container"
+import FAQBlock from "../../components/faq-block/FAQBlock"
 import Header from "../../components/header/Header"
 import ExternalLink from "../../components/links/ExternalLink"
 import styles from "./about.module.scss"
@@ -14,7 +16,7 @@ const AboutPage = () => (
     </Head>
     <Header />
     <main>
-      <div className={styles.container}>
+      <Container>
         <div className={styles.aboutText}>
           <h1>I&apos;m a designer, developer, and startup co-founder from Switzerland.</h1>
           <p>
@@ -27,15 +29,13 @@ const AboutPage = () => (
           </div>
         </div>
         <div className={styles.faq}>
-          <div className={styles.faqBlock}>
-            <h2>What kind of work do you do?</h2>
+          <FAQBlock title="What kind of work do you do?">
             <p>
               I&apos;m a generalist, working at the intersection of design and technology – having
               experience in both fields. Most of my time is devoted to product work for my startups.
             </p>
-          </div>
-          <div className={styles.faqBlock}>
-            <h2>What tools do you use?</h2>
+          </FAQBlock>
+          <FAQBlock title="What tools do you use?">
             <p>
               The most important tool I use is the excellent{" "}
               <ExternalLink href="https://www.culturedcode.com/">Things 3</ExternalLink>, which
@@ -50,16 +50,15 @@ const AboutPage = () => (
               I use Microsoft&apos;s{" "}
               <ExternalLink href="https://code.visualstudio.com/">Visual Studio Code</ExternalLink>.
             </p>
-          </div>
-          <div className={styles.faqBlock}>
-            <h2>Are you available for hire?</h2>
+          </FAQBlock>
+          <FAQBlock title="Are you available for hire?">
             <p>
               Not currently, no. For design projects, see{" "}
               <ExternalLink href="https://www.nextcreative.ch">NextCreative</ExternalLink>.
             </p>
-          </div>
+          </FAQBlock>
         </div>
-      </div>
+      </Container>
     </main>
   </div>
 )
