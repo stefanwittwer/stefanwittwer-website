@@ -59,7 +59,7 @@ const AboutPage = () => (
               For human interface design, I use{" "}
               <ExternalLink href="https://www.sketch.com">Sketch</ExternalLink>{" "}
               and{" "}
-              <ExternalLink href="https://wwww.figma.com">Figma</ExternalLink>.
+              <ExternalLink href="https://www.figma.com">Figma</ExternalLink>.
               And for development, I use Microsoft&apos;s{" "}
               <ExternalLink href="https://code.visualstudio.com/">
                 Visual Studio Code
