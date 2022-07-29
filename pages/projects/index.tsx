@@ -19,7 +19,7 @@ export const getStaticProps: GetStaticProps<ProjectsPageStaticProps> = async () 
 })
 
 const ProjectsPage = (props: InferGetStaticPropsType<typeof getStaticProps>) => (
-  <Page>
+  <Page className={styles.page}>
     <main>
       <div className={styles.title}>
         <h1>Projects</h1>

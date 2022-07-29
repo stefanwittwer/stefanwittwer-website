@@ -1,3 +1,9 @@
+@import "../../styles/transitions.scss";
+
+.page {
+  overflow-x: hidden;
+}
+
 .title {
   padding: 0 14rem;
 
@@ -6,12 +12,16 @@
     line-height: 6.432rem;
     margin-top: 0;
   }
+
+  @include slide-in-horizontal(0.25s);
 }
 
 .projects {
   padding: 0 14rem;
   padding-bottom: 2rem;
   overflow-x: auto;
+
+  @include slide-in-horizontal(0.35s);
 }
 
 .projectsInner {
