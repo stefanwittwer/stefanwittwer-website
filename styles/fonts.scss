@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Edu Favorit";
+  src: url("/fonts/EduFavorit-Regular.woff2") format("woff2"),
+    url("/fonts/EduFavorit-Regular.woff") format("woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Edu Favorit Book";
+  src: url("/fonts/EduFavorit-Book.woff2") format("woff2"),
+    url("/fonts/EduFavorit-Book.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Edu Favorit";
+  src: url("/fonts/EduFavorit-Medium.woff2") format("woff2"),
+    url("/fonts/EduFavorit-Medium.woff") format("woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Edu Favorit";
+  src: url("/fonts/EduFavorit-Bold.woff2") format("woff2"),
+    url("/fonts/EduFavorit-Bold.woff") format("woff");
+  font-weight: 700;
+}

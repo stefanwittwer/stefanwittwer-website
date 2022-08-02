@@ -1,0 +1,35 @@
+.container {
+  padding: 0 2rem;
+  max-width: 110rem;
+  margin: 0 auto;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+}
+
+.title {
+  margin: 0;
+  font-size: 7.4rem;
+  position: relative;
+  z-index: 1;
+}
+
+.video {
+  $scale: 0.9;
+
+  width: 85rem * $scale;
+  height: 55rem * $scale;
+
+  position: absolute;
+
+  margin-top: 4rem;
+  right: -12rem;
+}
