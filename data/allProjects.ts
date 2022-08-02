@@ -1,8 +1,8 @@
 import Project from "./model/Project"
-import PROJECTS from "./projects.json"
+import Projects from "./projects.json"
 
 const allProjects = (): Project[] =>
-  Object.values(PROJECTS).reduce(
+  Object.values(Projects).reduce(
     (accumulator, currentProjects) => [...accumulator, ...currentProjects],
     [],
   )
