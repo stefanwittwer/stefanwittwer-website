@@ -16,7 +16,8 @@ const Home = () => {
         <main className={styles.main}>
           <h1 className={styles.title}>I make things.</h1>
           <video autoPlay loop playsInline muted className={styles.video} width={850} height={550}>
-            <source src="/video/home-logomark-visual.webm" />
+            <source src="/video/home-logomark-visual.webm" type="video/webm" />
+            <source src="/video/home-logomark-visual.mp4" type="video/mp4" />
           </video>
         </main>
       </div>
