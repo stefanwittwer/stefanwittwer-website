@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare-webfonts": "mkdir public/assets/fonts && git clone https://$WEBFONT_PRIVATE_GIT_REPO_PAT@github.com/StefanWittwer/stefanwittwer-website-fonts.git && cp stefanwittwer-website-fonts/fonts/* public/assets/fonts/ && rm -rf stefanwittwer-website-fonts"
   },
   "dependencies": {
     "classnames": "^2.3.1",
