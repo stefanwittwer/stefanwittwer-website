@@ -89,7 +89,39 @@
     }
 
     nav {
-      display: none;
+      position: fixed;
+
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: center;
+
+      background-color: white;
+
+      padding: 3.4rem;
+      gap: 2.4rem;
+
+      top: 0;
+      left: 0;
+
+      width: 100vw;
+      height: 100vh;
+
+      transform: translateY(-100%);
+      overflow: hidden;
+
+      a {
+        padding-bottom: 1.6rem;
+        font-size: 2.8rem;
+
+        border-bottom: 0.1rem solid #ededed;
+        color: $foreground-color;
+
+        &:global(.current) {
+          border-color: #000000;
+          border-width: 0.15rem;
+          font-weight: 500;
+        }
+      }
     }
 
     &.mobileMenuOpen {
@@ -98,37 +130,13 @@
       }
 
       nav {
-        position: fixed;
+        transform: translateY(0%);
+      }
+    }
 
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        justify-content: center;
-
-        background-color: white;
-
-        padding: 3.4rem;
-        gap: 2.4rem;
-
-        top: 0;
-        left: 0;
-
-        width: 100vw;
-        height: 100vh;
-
-        a {
-          padding-bottom: 1.6rem;
-          font-size: 2.8rem;
-
-          border-bottom: 0.1rem solid #ededed;
-          color: $foreground-color;
-
-          &:global(.current) {
-            border-color: #000000;
-            border-width: 0.15rem;
-            font-weight: 500;
-          }
-        }
+    &.mobileMenuTouched {
+      nav {
+        transition: 0.55s transform cubic-bezier(0.51, 0.03, 0.02, 1);
       }
     }
   }

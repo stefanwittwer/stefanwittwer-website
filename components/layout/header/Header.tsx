@@ -11,7 +11,9 @@ interface HeaderProps {
 
 const Header = (props: HeaderProps) => {
   const [showMobileHeader, setShowMobileHeader] = useState<boolean>(false)
+
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false)
+  const [hasMobileMenuBeenTouched, setHasMobileMenuBeenTouched] = useState<boolean>(false)
 
   useEffect(() => {
     const onSizeChanged = () => {
@@ -37,6 +39,7 @@ const Header = (props: HeaderProps) => {
         [styles.light]: props.lightAppearance,
         [styles.mobile]: showMobileHeader,
         [styles.mobileMenuOpen]: isMobileMenuOpen,
+        [styles.mobileMenuTouched]: hasMobileMenuBeenTouched,
       })}
     >
       <Link href="/">
@@ -55,7 +58,10 @@ const Header = (props: HeaderProps) => {
         <button
           className={styles.menuButton}
           aria-label="Menu"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          onClick={() => {
+            setHasMobileMenuBeenTouched(true)
+            setIsMobileMenuOpen(!isMobileMenuOpen)
+          }}
         />
       )}
     </header>
