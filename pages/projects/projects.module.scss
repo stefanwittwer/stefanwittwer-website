@@ -53,3 +53,28 @@
   display: flex;
   gap: 4rem;
 }
+
+@media screen and (max-width: 767px) {
+  .main {
+    position: relative;
+    top: auto;
+  }
+
+  .projects {
+    overflow-x: hidden;
+    overflow-y: visible;
+
+    height: auto;
+    width: 100%;
+  }
+
+  .projects,
+  .title {
+    padding: 0 3.2rem;
+  }
+
+  .projectsInner {
+    transform: none !important;
+    flex-direction: column;
+  }
+}

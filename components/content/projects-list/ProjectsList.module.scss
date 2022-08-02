@@ -30,3 +30,19 @@
   letter-spacing: 2%;
   opacity: 0.6;
 }
+
+@media screen and (max-width: 767px) {
+  .projects {
+    flex-direction: column;
+    margin-right: 0;
+    gap: 0.4rem;
+  }
+
+  .project {
+    width: 100%;
+  }
+
+  .box {
+    height: auto;
+  }
+}

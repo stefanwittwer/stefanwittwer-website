@@ -18,6 +18,7 @@ const ProjectsList = (props: ProjectsListProps) => (
               src={`/assets/posters/${project.slug}.jpg`}
               width={322}
               height={244}
+              layout="responsive"
               alt={project.title}
             />
           </DesignBox>

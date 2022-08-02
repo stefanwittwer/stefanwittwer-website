@@ -35,3 +35,14 @@
     background-color: $background-color;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .hero {
+    padding: 0 4.2rem;
+    padding-top: 4rem;
+
+    &::after {
+      width: 16rem;
+    }
+  }
+}

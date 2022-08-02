@@ -4,9 +4,9 @@ import { useEffect, useRef } from "react"
 import ProjectsList from "../../components/content/projects-list/ProjectsList"
 import Page from "../../components/page/Page"
 import allProjects from "../../data/AllProjects"
-import AllGroups from "../../data/groups.json"
+import Groups from "../../data/groups.json"
 import Project from "../../data/model/Project"
-import AllProjects from "../../data/projects.json"
+import Projects from "../../data/projects.json"
 import styles from "./projects.module.scss"
 
 interface ProjectsPageStaticProps {
@@ -17,8 +17,8 @@ interface ProjectsPageStaticProps {
 
 export const getStaticProps: GetStaticProps<ProjectsPageStaticProps> = async () => ({
   props: {
-    projects: AllProjects,
-    groups: AllGroups,
+    projects: Projects,
+    groups: Groups,
     numberOfProjects: allProjects().length,
   },
 })

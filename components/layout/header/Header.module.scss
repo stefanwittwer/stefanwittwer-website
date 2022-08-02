@@ -42,6 +42,96 @@
       border-color: white;
     }
   }
+
+  &.mobile {
+    height: 10.6rem;
+    padding: 0;
+
+    &.light {
+      .menuButton {
+        background-image: url("/assets/iconography/mobile-menu-white.svg");
+      }
+
+      body:global(.scrolled-past-hero) & .menuButton {
+        background-image: url("/assets/iconography/mobile-menu.svg");
+      }
+
+      &.mobileMenuOpen {
+        .logo {
+          filter: inherit;
+        }
+      }
+    }
+
+    .menuButton {
+      position: absolute;
+
+      right: 0;
+      top: 0;
+
+      width: 9.6rem;
+      height: 10.6rem;
+
+      border: none;
+      cursor: pointer;
+
+      background: transparent url("/assets/iconography/mobile-menu.svg") no-repeat center;
+      background-size: 4.8rem 4.8rem;
+    }
+
+    a.brand {
+      position: absolute;
+
+      top: 3.4rem;
+      left: 3.4rem;
+
+      z-index: 1;
+    }
+
+    nav {
+      display: none;
+    }
+
+    &.mobileMenuOpen {
+      .menuButton {
+        background-image: url("/assets/iconography/mobile-menu-close.svg");
+      }
+
+      nav {
+        position: fixed;
+
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+
+        background-color: white;
+
+        padding: 3.4rem;
+        gap: 2.4rem;
+
+        top: 0;
+        left: 0;
+
+        width: 100vw;
+        height: 100vh;
+
+        a {
+          padding-bottom: 1.6rem;
+          font-size: 2.8rem;
+
+          border-bottom: 0.1rem solid #ededed;
+          color: $foreground-color;
+
+          &:global(.current) {
+            border-color: #000000;
+            border-width: 0.15rem;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
 }
 
 body:global(.scrolled-past-hero) .header.light {

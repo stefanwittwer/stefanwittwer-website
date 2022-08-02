@@ -6,6 +6,7 @@ interface DesignBoxProps {
   children?: React.ReactNode
   backgroundColour?: string
   className?: string
+  contentClassName?: string
 }
 
 const DesignBox = (props: DesignBoxProps) => (
@@ -13,7 +14,7 @@ const DesignBox = (props: DesignBoxProps) => (
     className={classNames(styles.box, props.className)}
     style={{ backgroundColor: props.backgroundColour }}
   >
-    <div className={styles.content}>{props.children}</div>
+    <div className={classNames(styles.content, props.contentClassName)}>{props.children}</div>
     <div className={classNames(styles.handle, styles.top, styles.left)} />
     <div className={classNames(styles.handle, styles.top, styles.right)} />
     <div className={classNames(styles.handle, styles.bottom, styles.left)} />

@@ -48,3 +48,27 @@
 
   @include fade-in(0.25s);
 }
+
+@media screen and (max-width: 82rem) {
+  .container {
+    padding: 0 3.4rem;
+  }
+
+  .main {
+    justify-content: flex-start;
+  }
+
+  .title {
+    font-size: 6rem;
+    line-height: 6.9rem;
+    padding-top: 16vh;
+  }
+
+  .video {
+    left: -12rem;
+    right: auto;
+
+    width: 66.4rem;
+    margin-top: 20rem;
+  }
+}
