@@ -42,8 +42,6 @@
   flex-direction: row;
   align-items: center;
 
-  @include slide-in-horizontal(0.35s);
-
   h2 {
     margin-bottom: 0.8rem;
   }
@@ -54,10 +52,21 @@
   gap: 4rem;
 }
 
+@media screen and (min-width: 768px) {
+  .main {
+    @include slide-in-horizontal(0.25s);
+  }
+  .title {
+    @include slide-in-horizontal(0.35s);
+  }
+}
+
 @media screen and (max-width: 767px) {
   .main {
     position: relative;
     top: auto;
+
+    @include slide-in(0.45s);
   }
 
   .projects {
@@ -71,6 +80,10 @@
   .projects,
   .title {
     padding: 0 3.2rem;
+  }
+
+  .title {
+    @include slide-in(0.25s);
   }
 
   .projectsInner {
