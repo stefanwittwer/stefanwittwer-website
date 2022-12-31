@@ -42,16 +42,14 @@ const Header = (props: HeaderProps) => {
         [styles.mobileMenuTouched]: hasMobileMenuBeenTouched,
       })}
     >
-      <Link href="/">
-        <a className={styles.brand}>
-          <Image
-            className={styles.logo}
-            src="/assets/sw-logomark.svg"
-            height={38}
-            width={68}
-            alt="Stefan Wittwer"
-          />
-        </a>
+      <Link href="/" className={styles.brand}>
+        <Image
+          className={styles.logo}
+          src="/assets/sw-logomark.svg"
+          height={38}
+          width={68}
+          alt="Stefan Wittwer"
+        />
       </Link>
       <Navigation />
       {showMobileHeader && (

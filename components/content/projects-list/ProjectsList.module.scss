@@ -40,9 +40,9 @@
 
   .project {
     width: 100%;
-  }
 
-  .box {
-    height: auto;
+    img {
+      object-fit: cover;
+    }
   }
 }

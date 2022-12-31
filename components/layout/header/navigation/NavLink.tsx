@@ -15,10 +15,11 @@ const doesPathMatch = (linkPath: string, currentPath: string) => {
 const NavLink = (props: NavLinkProps) => {
   const router = useRouter()
   return (
-    <Link href={props.href}>
-      <a className={doesPathMatch(props.href, router.pathname) ? "current" : undefined}>
-        {props.children}
-      </a>
+    <Link
+      href={props.href}
+      className={doesPathMatch(props.href, router.pathname) ? "current" : undefined}
+    >
+      {props.children}
     </Link>
   )
 }
