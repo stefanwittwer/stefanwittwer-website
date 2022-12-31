@@ -1,0 +1,18 @@
+{
+  "posts": [
+    {
+      "slug": "just-start-already",
+      "title": "Just start already",
+      "description": "Don't overthink – just start small and manage your expectations. You'd be surprised how much you can accomplish.",
+      "category": "product",
+      "publishedOn": "2021-11-01"
+    },
+    {
+      "slug": "a-product-is-a-collection-of-trade-offs",
+      "title": "A product is a collection of trade-offs",
+      "description": "Exploring the inherent trade-offs in product design.",
+      "category": "product",
+      "publishedOn": "2022-03-13"
+    }
+  ]
+}

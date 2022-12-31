@@ -1,3 +1,4 @@
+import classNames from "classnames"
 import { CategoryIconName } from "../category-icon/CategoryIcon"
 import FilterOption from "./FilterOption"
 import styles from "./Filters.module.scss"
@@ -12,10 +13,11 @@ interface FiltersProps {
   options: IFilterOption[]
   currentFilter: any
   onChange: (filter: any) => void
+  vertical?: boolean
 }
 
 const Filters = (props: FiltersProps) => (
-  <div className={styles.filters}>
+  <div className={classNames(styles.filters, { [styles.vertical]: props.vertical })}>
     <FilterOption
       icon="all"
       title="All"

@@ -1,8 +1,11 @@
+import { GetStaticProps, InferGetStaticPropsType } from "next"
 import Head from "next/head"
 import { useState } from "react"
+import GalleryItem from "../../components/content/gallery/GalleryItem"
 import Container from "../../components/layout/container/Container"
 import Page from "../../components/page/Page"
 import Filters from "../../components/presentation/filter/Filters"
+import Gallery from "../../data/gallery.json"
 import styles from "./gallery.module.scss"
 
 const GalleryCategories = [
@@ -15,7 +18,24 @@ const GalleryCategories = [
 ] as const
 type GalleryCategory = typeof GalleryCategories[number]["value"]
 
-const GalleryPage = () => {
+interface GalleryPost {
+  slug: string
+  title: string
+  description: string
+  category: string
+  publishedOn: string
+}
+interface GalleryPageStaticProps {
+  posts: GalleryPost[]
+}
+
+export const getStaticProps: GetStaticProps<GalleryPageStaticProps> = async () => ({
+  props: {
+    posts: Gallery.posts,
+  },
+})
+
+const GalleryPage = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
   const [currentFilter, setCurrentFilter] = useState<GalleryCategory | null>(null)
 
   return (
@@ -25,8 +45,8 @@ const GalleryPage = () => {
         {/* TODO: Write a meta description and add a social graph image */}
       </Head>
       <main>
-        <Container wide>
-          <section className={styles.header}>
+        <div className={styles.container}>
+          <section className={styles.sidebar}>
             <h1>Thoughts, learnings and case studies</h1>
             <p>This is where I collect things from both inspiration and personal experience.</p>
             <div className={styles.filters}>
@@ -38,10 +58,18 @@ const GalleryPage = () => {
                 }))}
                 currentFilter={currentFilter}
                 onChange={(filter) => setCurrentFilter(filter)}
+                vertical
               />
             </div>
           </section>
-        </Container>
+          <section className={styles.gallery}>
+            {props.posts
+              .filter((post) => !currentFilter || post.category === currentFilter)
+              .map((post) => (
+                <GalleryItem key={post.slug} {...post} />
+              ))}
+          </section>
+        </div>
       </main>
     </Page>
   )

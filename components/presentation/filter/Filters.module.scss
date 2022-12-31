@@ -1,4 +1,14 @@
 .filters {
   display: flex;
   gap: 1rem;
+
+  &.vertical {
+    flex-direction: column;
+    gap: 0.8rem;
+
+    @media screen and (max-width: 1023px) {
+      flex-direction: row;
+      overflow-x: auto;
+    }
+  }
 }
