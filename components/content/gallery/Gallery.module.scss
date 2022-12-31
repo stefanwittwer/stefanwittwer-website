@@ -1,5 +1,5 @@
-@import "../../styles/transitions.scss";
-@import "../../styles/colours.scss";
+@import "../../../styles/transitions.scss";
+@import "../../../styles/colours.scss";
 
 .container {
   display: flex;
@@ -8,7 +8,7 @@
   gap: 6rem;
   align-items: flex-start;
 
-  max-width: 172rem;
+  max-width: 156rem;
   margin: 0 auto;
   margin-bottom: 4rem;
 
@@ -44,7 +44,7 @@
 
   h1 {
     @include slide-in(0.2s);
-    font-size: 2.8rem;
+    font-size: 2.6rem;
 
     margin: 0;
     margin-bottom: 1.2rem;

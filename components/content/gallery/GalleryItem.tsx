@@ -1,5 +1,6 @@
 import classNames from "classnames"
 import Link from "next/link"
+import { MouseEventHandler } from "react"
 import CategoryIcon, { CategoryIconName } from "../../presentation/category-icon/CategoryIcon"
 import styles from "./GalleryItem.module.scss"
 
@@ -9,6 +10,7 @@ interface GalleryItemProps {
   description: string
   category: string
   publishedOn: string
+  onClick?: MouseEventHandler<HTMLAnchorElement>
 }
 
 const GalleryCategoryTitles = {
@@ -21,7 +23,7 @@ const GalleryCategoryTitles = {
 } as const
 
 const GalleryItem = (props: GalleryItemProps) => (
-  <Link href={`/gallery/${props.slug}`} className={styles.item}>
+  <Link href={`/gallery/${props.slug}`} className={styles.item} onClick={props.onClick}>
     <div className={styles.image} />
     <div className={styles.depiction}>
       <div className={classNames(styles.category, `category-${props.category}`)}>
