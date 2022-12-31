@@ -40,7 +40,7 @@ const ProjectsPage = (props: InferGetStaticPropsType<typeof getStaticProps>) => 
   return (
     <Page className={styles.page} style={{ height: `${pageHeight}vh` }}>
       <Head>
-        <title>Projects - Stefan Wittwer</title>
+        <title>Work - Stefan Wittwer</title>
         <meta
           name="description"
           content="I have co-founded a few startups, notably NextBusiness and Custom (superseeded by Float). You can learn more about apps and education projects I've worked on."
@@ -49,7 +49,7 @@ const ProjectsPage = (props: InferGetStaticPropsType<typeof getStaticProps>) => 
       <main className={styles.main}>
         <div>
           <div className={styles.title}>
-            <h1>Projects</h1>
+            <h1>Work</h1>
           </div>
           <div className={styles.projects}>
             <div className={styles.projectsInner} ref={projectsInnerRef}>

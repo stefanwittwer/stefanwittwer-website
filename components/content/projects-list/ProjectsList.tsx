@@ -11,7 +11,7 @@ interface ProjectsListProps {
 const ProjectsList = (props: ProjectsListProps) => (
   <div className={styles.projects}>
     {props.projects.map((project) => (
-      <Link href={`/projects/${project.slug}`} key={project.slug} className={styles.project}>
+      <Link href={`/work/${project.slug}`} key={project.slug} className={styles.project}>
         <DesignBox className={styles.box}>
           <Image src={`/assets/posters/${project.slug}.jpg`} fill alt={project.title} />
         </DesignBox>

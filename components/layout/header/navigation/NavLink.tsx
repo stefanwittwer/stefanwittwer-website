@@ -5,6 +5,7 @@ import React from "react"
 interface NavLinkProps {
   href: string
   children: React.ReactNode
+  isExternal?: boolean
 }
 
 const doesPathMatch = (linkPath: string, currentPath: string) => {
@@ -18,6 +19,8 @@ const NavLink = (props: NavLinkProps) => {
     <Link
       href={props.href}
       className={doesPathMatch(props.href, router.pathname) ? "current" : undefined}
+      target={props.isExternal ? "_blank" : undefined}
+      rel={props.isExternal ? "noopener noreferrer" : undefined}
     >
       {props.children}
     </Link>

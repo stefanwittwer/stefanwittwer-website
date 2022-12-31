@@ -1,0 +1,32 @@
+.option {
+  display: flex;
+  gap: 1rem;
+
+  padding: 1rem 1.2rem;
+  padding-bottom: 0.9rem;
+
+  font-size: 1.5rem;
+
+  background: transparent;
+  border: 0.1rem solid rgba(113, 117, 122, 0.15);
+  border-radius: 0.1rem;
+
+  cursor: pointer;
+  transition: 0.05s all ease-in-out;
+
+  &:hover {
+    border-color: #000;
+    background: #eee;
+  }
+
+  &.active {
+    background: #000;
+    border-color: #000;
+    color: white;
+  }
+}
+
+.icon {
+  flex-shrink: 0;
+  height: 2rem;
+}

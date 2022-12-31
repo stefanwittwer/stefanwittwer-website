@@ -5,10 +5,13 @@ import styles from "./Container.module.scss"
 interface ContainerProps {
   children?: React.ReactNode
   className?: string
+  wide?: boolean
 }
 
 const Container = (props: ContainerProps) => (
-  <div className={classNames(styles.container, props.className)}>{props.children}</div>
+  <div className={classNames(styles.container, props.className, { [styles.wide]: props.wide })}>
+    {props.children}
+  </div>
 )
 
 export default Container

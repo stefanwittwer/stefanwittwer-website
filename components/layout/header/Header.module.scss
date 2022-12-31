@@ -29,6 +29,12 @@
         border-color: $foreground-color;
       }
     }
+
+    :global(.divider) {
+      width: 0.1rem;
+      height: 1.8rem;
+      background-color: rgba(113, 117, 122, 0.15);
+    }
   }
 
   &.light {
@@ -98,7 +104,7 @@
       background-color: white;
 
       padding: 3.4rem;
-      gap: 2.4rem;
+      gap: 1.4rem;
 
       top: 0;
       left: 0;
@@ -111,7 +117,7 @@
 
       a {
         padding-bottom: 1.6rem;
-        font-size: 2.8rem;
+        font-size: 2.4rem;
 
         border-bottom: 0.1rem solid #ededed;
         color: $foreground-color;
@@ -121,6 +127,12 @@
           border-width: 0.15rem;
           font-weight: 500;
         }
+      }
+
+      :global(.divider) {
+        width: auto;
+        height: 1rem;
+        background: transparent;
       }
     }
 
