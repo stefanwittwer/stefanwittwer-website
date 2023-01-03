@@ -34,7 +34,7 @@ const GalleryPostPage = (props: InferGetStaticPropsType<typeof getStaticProps>) 
       <meta name="description" content={props.post.excerpt} />
       <meta property="og:title" content={props.post.title} />
       <meta property="og:type" content="article" />
-      {props.post.coverImage && <meta property="og:image" content={props.post.coverImage} />}
+      {props.post.socialImage && <meta property="og:image" content={props.post.socialImage} />}
       <meta property="og:description" content={props.post.excerpt} />
       <meta property="og:site_name" content="Stefan Wittwer" />
       <meta

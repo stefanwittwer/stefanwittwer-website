@@ -1,5 +1,6 @@
 import { NextApiRequest, NextApiResponse } from "next"
-import GalleryAPI, { IPost } from "../../../data/gallery"
+import GalleryAPI from "../../../data/gallery"
+import type { IPost } from "../../../data/gallery"
 
 const handler = async (req: NextApiRequest, res: NextApiResponse<IPost>) => {
   const { slug } = req.query

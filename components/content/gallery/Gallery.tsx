@@ -1,7 +1,8 @@
 import { useState } from "react"
+import { IPostPreview } from "../../../data/gallery"
 import Filters from "../../presentation/filter/Filters"
 import styles from "./Gallery.module.scss"
-import GalleryItem from "./GalleryItem"
+import GalleryMasonry from "./GalleryMasonry"
 
 const GalleryCategories = [
   { title: "Design", value: "design" },
@@ -13,16 +14,8 @@ const GalleryCategories = [
 ] as const
 export type GalleryCategory = typeof GalleryCategories[number]["value"]
 
-export interface GalleryPost {
-  slug: string
-  title: string
-  description: string
-  category: string
-  publishedOn: string
-}
-
 interface GalleryProps {
-  posts: GalleryPost[]
+  posts: IPostPreview[]
   onPostClick?: (slug: string) => void
 }
 
@@ -48,19 +41,7 @@ const Gallery = (props: GalleryProps) => {
         </div>
       </section>
       <section className={styles.gallery}>
-        {props.posts
-          .filter((post) => !currentFilter || post.category === currentFilter)
-          .map((post) => (
-            <GalleryItem
-              key={post.slug}
-              {...post}
-              onClick={(e) => {
-                e.preventDefault()
-                props.onPostClick?.(post.slug)
-                history.pushState(null, "", `/gallery/${post.slug}`)
-              }}
-            />
-          ))}
+        <GalleryMasonry posts={props.posts} onPostClick={props.onPostClick} />
       </section>
     </div>
   )

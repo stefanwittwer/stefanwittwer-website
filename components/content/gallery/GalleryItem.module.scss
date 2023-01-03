@@ -1,6 +1,5 @@
 .item {
   background: white;
-  padding: 2rem;
 
   border-radius: 0.15rem;
   box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.1), 0 0.2rem 0.6rem rgba(0, 0, 0, 0.05);
@@ -11,10 +10,17 @@
       0 0 0 0.2rem rgba(0, 0, 0, 0.8);
   }
 
+  .coverImage {
+    height: 18rem;
+    background-size: cover;
+    background-position: center;
+  }
+
   .depiction {
     display: flex;
     flex-direction: column;
     gap: 1.8rem;
+    padding: 2rem;
   }
 
   .title {

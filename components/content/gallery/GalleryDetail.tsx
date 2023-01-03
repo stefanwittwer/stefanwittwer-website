@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import type { IPost } from "../../../pages/api/gallery/[slug]"
+import type { IPost } from "../../../data/gallery"
 import DetailView from "../../layout/detail-view/DetailView"
 import GalleryArticle from "./GalleryArticle"
 

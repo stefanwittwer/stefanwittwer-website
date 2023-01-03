@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { IPost } from "../../../data/gallery"
+import type { IPost } from "../../../data/gallery"
 import styles from "./GalleryArticle.module.scss"
 import GalleryCategoryTag from "./GalleryCategoryTag"
 

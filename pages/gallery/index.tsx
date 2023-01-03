@@ -1,13 +1,13 @@
 import { GetStaticProps, InferGetStaticPropsType } from "next"
 import Head from "next/head"
 import { useState } from "react"
-import Gallery, { GalleryPost } from "../../components/content/gallery/Gallery"
+import Gallery from "../../components/content/gallery/Gallery"
 import GalleryDetail from "../../components/content/gallery/GalleryDetail"
 import Page from "../../components/page/Page"
-import GalleryAPI from "../../data/gallery"
+import GalleryAPI, { IPostPreview } from "../../data/gallery"
 
 interface GalleryPageStaticProps {
-  posts: GalleryPost[]
+  posts: IPostPreview[]
 }
 
 export const getStaticProps: GetStaticProps<GalleryPageStaticProps> = async () => {
@@ -21,7 +21,6 @@ export const getStaticProps: GetStaticProps<GalleryPageStaticProps> = async () =
 
 const GalleryPage = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
   const [currentSlug, setCurrentSlug] = useState<string | null>(null)
-
   return (
     <Page>
       <Head>

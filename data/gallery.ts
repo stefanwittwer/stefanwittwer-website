@@ -1,13 +1,16 @@
-import GhostContentAPI, { GhostAPI } from "@tryghost/content-api"
-import { GalleryPost } from "../components/content/gallery/Gallery"
+import GhostContentAPI, { GhostAPI, PostOrPage } from "@tryghost/content-api"
 
-export interface IPost {
+export interface IPostPreview {
   slug: string
   title: string
   category: string
-  content: string
   excerpt: string
+  publishedOn: string
   coverImage?: string
+}
+export interface IPost extends IPostPreview {
+  content: string
+  socialImage?: string
 }
 
 class GalleryAPI {
@@ -26,30 +29,32 @@ class GalleryAPI {
     })
   }
 
-  public async posts(tag?: string): Promise<GalleryPost[]> {
+  private apiRepresentationFor(post: PostOrPage): IPostPreview {
+    return {
+      slug: post.slug,
+      title: post.title,
+      excerpt: post.excerpt,
+      category: post.tags?.length ? post.tags[0]?.slug : "other",
+      publishedOn: post.published_at,
+      coverImage: post.feature_image,
+    }
+  }
+
+  public async posts(tag?: string): Promise<IPostPreview[]> {
     const posts = await this.api.posts.browse({
       limit: "all",
       filter: tag ? `tag:${tag}` : undefined,
       include: "tags",
     })
-    return posts.map((post) => ({
-      slug: post.slug,
-      title: post.title,
-      description: post.excerpt,
-      category: post.tags?.length ? post.tags[0]?.slug : "other",
-      publishedOn: post.published_at,
-    }))
+    return posts.map((post) => this.apiRepresentationFor(post))
   }
 
   public async post(slug: string): Promise<IPost> {
     const post = await this.api.posts.read({ slug }, { include: "tags" })
     return {
-      slug: post.slug,
-      title: post.title,
-      category: post.tags?.length ? post.tags[0]?.name : "other",
+      ...this.apiRepresentationFor(post),
       content: post.html,
-      excerpt: post.excerpt,
-      coverImage: post.feature_image,
+      socialImage: post.og_image,
     }
   }
 }
