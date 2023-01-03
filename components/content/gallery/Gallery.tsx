@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useMemo, useState } from "react"
 import { IPostPreview } from "../../../data/gallery"
 import Filters from "../../presentation/filter/Filters"
 import styles from "./Gallery.module.scss"
@@ -21,6 +21,10 @@ interface GalleryProps {
 
 const Gallery = (props: GalleryProps) => {
   const [currentFilter, setCurrentFilter] = useState<GalleryCategory | null>(null)
+  const posts = useMemo(
+    () => props.posts.filter((post) => currentFilter === null || post.category === currentFilter),
+    [props.posts, currentFilter],
+  )
 
   return (
     <div className={styles.container}>
@@ -41,7 +45,7 @@ const Gallery = (props: GalleryProps) => {
         </div>
       </section>
       <section className={styles.gallery}>
-        <GalleryMasonry posts={props.posts} onPostClick={props.onPostClick} />
+        <GalleryMasonry posts={posts} onPostClick={props.onPostClick} />
       </section>
     </div>
   )
