@@ -12,7 +12,7 @@
   margin: 0 auto;
   margin-bottom: 4rem;
 
-  padding: 0 6rem;
+  padding: 0 4rem;
 
   @media screen and (max-width: 1023px) {
     flex-direction: column;
@@ -64,5 +64,4 @@
 
 .gallery {
   @include slide-in(0.65s);
-  margin: 0.6rem 0;
 }

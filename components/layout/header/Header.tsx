@@ -46,8 +46,8 @@ const Header = (props: HeaderProps) => {
         <Image
           className={styles.logo}
           src="/assets/sw-logomark.svg"
-          height={38}
-          width={68}
+          height={33}
+          width={60}
           alt="Stefan Wittwer"
         />
       </Link>
