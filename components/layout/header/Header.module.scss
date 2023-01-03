@@ -50,10 +50,18 @@
   }
 
   &.mobile {
-    height: 10.6rem;
+    height: 10.2rem;
     padding: 0;
 
+    background-color: #f3f2f3;
+
     &.light {
+      background-color: transparent;
+
+      body:global(.scrolled-past-hero) & {
+        background-color: #f3f2f3;
+      }
+
       .menuButton {
         background-image: url("/assets/iconography/mobile-menu-white.svg");
       }
