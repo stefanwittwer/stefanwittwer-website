@@ -1,0 +1,41 @@
+.category {
+  display: flex;
+  gap: 0.8rem;
+
+  align-self: flex-start;
+  background: #e0e5e7;
+  padding: 0.5rem 0.9rem;
+  border-radius: 0.2rem;
+
+  font-size: 1.45rem;
+  letter-spacing: 0.02rem;
+
+  span {
+    padding-top: 0.1rem;
+  }
+
+  &:global(.category-design) {
+    background-color: #fae1f2;
+    color: #6a0029;
+  }
+  &:global(.category-code) {
+    background-color: #d3ffda;
+    color: #006a29;
+  }
+  &:global(.category-product) {
+    background-color: #d6f7f7;
+    color: #004c6a;
+  }
+  &:global(.category-business) {
+    background-color: #e5e9ef;
+    color: #212c36;
+  }
+  &:global(.category-workflow) {
+    background-color: #f0e6fa;
+    color: #2b0157;
+  }
+  &:global(.category-experiment) {
+    background-color: #dfe3f2;
+    color: #090133;
+  }
+}

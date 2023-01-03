@@ -1,0 +1,17 @@
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.article {
+  p {
+    font-size: 1.75rem;
+    margin: 2.8rem 0;
+  }
+
+  figure img {
+    max-width: 100%;
+    height: auto;
+    margin: 0.2rem 0;
+  }
+}

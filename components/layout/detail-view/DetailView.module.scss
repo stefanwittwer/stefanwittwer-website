@@ -27,6 +27,8 @@
   max-width: 88rem;
   margin-left: -44rem;
 
+  overflow-y: auto;
+
   @media screen and (max-width: 900px) {
     left: 0;
     margin-left: 0;

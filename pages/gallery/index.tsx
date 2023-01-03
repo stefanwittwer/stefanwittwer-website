@@ -4,17 +4,20 @@ import { useState } from "react"
 import Gallery, { GalleryPost } from "../../components/content/gallery/Gallery"
 import GalleryDetail from "../../components/content/gallery/GalleryDetail"
 import Page from "../../components/page/Page"
-import GalleryData from "../../data/gallery.json"
+import GalleryAPI from "../../data/gallery"
 
 interface GalleryPageStaticProps {
   posts: GalleryPost[]
 }
 
-export const getStaticProps: GetStaticProps<GalleryPageStaticProps> = async () => ({
-  props: {
-    posts: GalleryData.posts,
-  },
-})
+export const getStaticProps: GetStaticProps<GalleryPageStaticProps> = async () => {
+  const api = new GalleryAPI()
+  return {
+    props: {
+      posts: await api.posts(),
+    },
+  }
+}
 
 const GalleryPage = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
   const [currentSlug, setCurrentSlug] = useState<string | null>(null)

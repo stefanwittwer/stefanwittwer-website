@@ -10,6 +10,7 @@
     "prepare-webfonts": "mkdir public/fonts && git clone https://$WEBFONT_PRIVATE_GIT_REPO_PAT@github.com/StefanWittwer/stefanwittwer-website-fonts.git && cp stefanwittwer-website-fonts/* public/fonts/ && rm -rf stefanwittwer-website-fonts"
   },
   "dependencies": {
+    "@tryghost/content-api": "^1.11.5",
     "classnames": "^2.3.1",
     "framer-motion": "^8.0.2",
     "next": "^13.1.1",
@@ -20,6 +21,7 @@
     "@svgr/webpack": "^6.5.1",
     "@types/node": "^18.6.1",
     "@types/react": "^18.0.15",
+    "@types/tryghost__content-api": "^1.3.11",
     "eslint": "8.20.0",
     "eslint-config-next": "^13.1.1",
     "sass": "^1.54.0",
