@@ -6,7 +6,7 @@ const useNumberOfColumns = () => {
   useEffect(() => {
     const onResize = () => {
       const width = window.innerWidth
-      if (width < 768) {
+      if (width < 724) {
         setNumberOfColumns(1)
       } else if (width < 1024) {
         setNumberOfColumns(2)
