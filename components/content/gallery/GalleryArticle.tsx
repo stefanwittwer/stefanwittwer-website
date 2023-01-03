@@ -10,9 +10,7 @@ interface GalleryArticleProps {
 const GalleryArticle = (props: GalleryArticleProps) => (
   <div className={styles.content}>
     <GalleryCategoryTag category={props.post.category} />
-    <Link href={`/gallery/${props.post.slug}`}>
-      <h1>{props.post.title}</h1>
-    </Link>
+    <h1>{props.post.title}</h1>
     <article className={styles.article} dangerouslySetInnerHTML={{ __html: props.post.content }} />
   </div>
 )
