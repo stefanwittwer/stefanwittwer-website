@@ -1,5 +1,6 @@
 import Award from "./Award"
 import Publication from "./Publication"
+import StoryLink from "./StoryLink"
 
 interface ProjectDetails {
   name: string
@@ -23,6 +24,7 @@ interface ProjectDetails {
   publications?: Publication[]
   awards?: Award[]
   storyTitle?: string
+  storyLinks?: StoryLink[]
   story?: string
   partOf?: string
   availability?: string

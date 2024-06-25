@@ -43,7 +43,7 @@ const ProjectsPage = (props: InferGetStaticPropsType<typeof getStaticProps>) => 
         <title>Projects - Stefan Wittwer</title>
         <meta
           name="description"
-          content="I have co-founded a few startups, notably NextBusiness and Custom (superseeded by Float). You can learn more about apps and education projects I've worked on."
+          content="I have co-founded a few startups, notably NextBusiness and Custom (now Rise). You can learn more about apps and education projects I've worked on."
         />
       </Head>
       <main className={styles.main}>

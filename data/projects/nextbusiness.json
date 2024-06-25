@@ -12,6 +12,16 @@
   "industry": "Startup services",
   "markets": "Switzerland",
   "role": "CEO",
-  "story": "NextBusiness was founded in 2018 with the mission to help anyone realise their business ideas through business services from marketing to startup consulting. Today, NextBusiness is a focused company, creating helpful resources to educate and inspire young startup founders like ourselves, tackling the issues small businesses in Switzerland face today, and providing breakthrough tools that help anyone start their own business.",
+  "story": "NextBusiness was founded in 2018 with the mission to help anyone realise their business ideas. We make infinity.swiss, the easiest business software for founders and entrepreneurs in Switzerland.",
+  "storyLinks": [
+    {
+      "title": "Infinity – Switzerland's easiest business software",
+      "url": "https://www.infinity.swiss"
+    },
+    {
+      "title": "Our Swiss QR invoice generator",
+      "url": "https://www.infinity.swiss/tools/qr-rechnung"
+    }
+  ],
   "storyTitle": "Founding story"
 }

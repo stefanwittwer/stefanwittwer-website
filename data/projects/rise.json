@@ -1,9 +1,9 @@
 {
-  "title": "Float",
+  "title": "Rise",
   "description": "Cloud PCs for your business, which you can setup with just a few clicks.",
   "graphics": {
     "hero": true,
-    "heroForeground": true
+    "heroForeground": false
   },
   "appearance": {
     "heroHasDarkColour": true
@@ -11,5 +11,6 @@
   "foundingYear": "2022",
   "industry": "Cloud computing",
   "story": "The founding team behind Custom has decided to move on to a promising, new business model, centered around the idea of cloud PCs. In contrast to a regular PC, a cloud PC only exists in the cloud and can be accessed securely from any device, allowing full flexibility when it comes to performance and scale. You can spin up new cloud PCs in a matter of seconds, and when you don't need them anymore, you can disable them and they won't incur any more costs.",
-  "storyTitle": "Founding story"
+  "storyTitle": "Founding story",
+  "website": "https://www.rise.swiss/"
 }

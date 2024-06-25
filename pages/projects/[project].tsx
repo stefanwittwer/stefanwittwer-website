@@ -91,6 +91,17 @@ const ProjectPage = (props: ProjectPageStaticProps) => {
               <p>{props.details.story}</p>
             </Section>
           )}
+          {props.details.storyLinks && (
+            <Section title="Learn more">
+              {props.details.storyLinks.map((link) => (
+                <p key={link.url}>
+                  <ExternalLink href={link.url} tint={props.details.tint}>
+                    {link.title}
+                  </ExternalLink>
+                </p>
+              ))}
+            </Section>
+          )}
           {props.details.publications && (
             <Section title="Publications">
               {props.details.publications.map((publication) => (
